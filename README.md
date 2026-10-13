@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # CampusBites - Campus Cafeteria POS
 
 ## Run locally
@@ -31,3 +32,7 @@ The existing storage keys (`cafeteriaCart`, `cafeteriaReceipt`) are unchanged.
 5. Start a new transaction; confirm cart, payment, and receipt reset.
 
 Product visuals are emoji placeholders and require no downloaded images.
+=======
+# Campus-Cafeteria-POS-
+A walk-up cafeteria counter where student assistants take lunch orders for rice meals, viands, snacks, and  drinks. 
+>>>>>>> 552c6508a913e814918d32837c9581d08c13000d
