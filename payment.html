@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   Payment | Campus Cafeteria
+  </title>
+  <link href="style.css" rel="stylesheet"/>
+  <script defer="" src="app.js">
+  </script>
+ </head>
+ <body>
+  <header class="site-header">
+   <nav class="nav container">
+    <a class="brand" href="index.html">🍃 Campus<span>Cafeteria</span></a>
+    <div class="nav-links">
+     <a href="index.html">
+      Home
+     </a>
+     <a href="menu.html">
+      Menu
+     </a>
+     <a class="cart-pill" href="cart.html">🛒 Cart (<span data-cart-count>0</span>)</a>
+    </div>
+   </nav>
+  </header>
+  <main class="container">
+   <div class="page-intro page-intro-centered">
+    <span class="eyebrow">
+     Safe &amp; simple checkout
+    </span>
+    <h1>
+     Cash Payment
+    </h1>
+    <p>
+     Review your total and enter the amount received from the customer.
+    </p>
+   </div>
+   <section class="panel payment-wrap">
+    <div class="payment-total">
+     <span>
+      Amount to Pay
+     </span>
+     <strong id="payment-total">
+      ₱0.00
+     </strong>
+    </div>
+    <form id="payment-form" novalidate="">
+     <label for="cash-input">
+      Cash Received (₱)
+     </label>
+     <input autocomplete="off" class="cash-input" id="cash-input" inputmode="decimal" placeholder="e.g. 150.00" step="0.01" type="number"/>
+     <p class="hint">
+      Cash only. Enter a non-negative amount with up to two decimal places.
+     </p>
+     <div aria-live="assertive" class="message" hidden="" id="message" role="alert">
+     </div>
+     <div class="change-preview">
+      <span>
+       Expected Change
+      </span>
+      <strong id="change-preview">
+       —
+      </strong>
+     </div>
+     <button class="btn btn-green btn-block" type="submit">
+      Confirm Payment →
+     </button>
+    </form>
+    <a class="btn btn-outline btn-block payment-back-link" href="cart.html">
+     ← Back to Cart
+    </a>
+   </section>
+  </main>
+  <footer class="footer">
+   Campus Cafeteria POS · IT 415 Practical Examination
+  </footer>
+ </body>
+</html>

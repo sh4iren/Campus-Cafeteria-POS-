@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   Menu | Campus Cafeteria
+  </title>
+  <link href="style.css" rel="stylesheet"/>
+  <script defer="" src="app.js">
+  </script>
+ </head>
+ <body>
+  <header class="site-header">
+   <nav class="nav container">
+    <a class="brand" href="index.html">🍃 Campus<span>Cafeteria</span></a>
+    <div class="nav-links">
+     <a href="index.html">
+      Home
+     </a>
+     <a class="active" href="menu.html">
+      Menu
+     </a>
+     <a class="cart-pill" href="cart.html">🛒 Cart (<span data-cart-count>0</span>)</a>
+    </div>
+   </nav>
+  </header>
+  <main class="container">
+   <div class="page-intro">
+    <span class="eyebrow">
+     Something delicious awaits
+    </span>
+    <h1>
+     Our Cafeteria Menu
+    </h1>
+    <p>
+     Pick your favorites. You can adjust quantities before checking out.
+    </p>
+   </div>
+   <div aria-live="polite" class="message" hidden="" id="message" role="status">
+   </div>
+   <section aria-label="Cafeteria products" class="product-grid" id="product-grid">
+   </section>
+   <div class="menu-actions">
+    <a class="btn btn-green" href="cart.html">
+     View Cart &amp; Continue →
+    </a>
+   </div>
+  </main>
+  <footer class="footer">
+   Campus Cafeteria POS · IT 415 Practical Examination
+  </footer>
+ </body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   Your Cart | Campus Cafeteria
+  </title>
+  <link href="style.css" rel="stylesheet"/>
+  <script defer="" src="app.js">
+  </script>
+ </head>
+ <body>
+  <header class="site-header">
+   <nav class="nav container">
+    <a class="brand" href="index.html">🍃 Campus<span>Cafeteria</span></a>
+    <div class="nav-links">
+     <a href="index.html">
+      Home
+     </a>
+     <a href="menu.html">
+      Menu
+     </a>
+     <a class="active cart-pill" href="cart.html">🛒 Cart (<span data-cart-count>0</span>)</a>
+    </div>
+   </nav>
+  </header>
+  <main class="container">
+   <div class="page-intro">
+    <span class="eyebrow">
+     Almost there
+    </span>
+    <h1>
+     Your Order
+    </h1>
+    <p>
+     Check your items and quantities before proceeding to payment.
+    </p>
+   </div>
+   <div class="message" hidden="" id="message" role="status">
+   </div>
+   <div class="checkout-layout">
+    <section class="panel">
+     <h2>
+      Cart Items
+     </h2>
+     <div id="cart-items">
+     </div>
+    </section>
+    <aside class="panel">
+     <h2>
+      Order Summary
+     </h2>
+     <div class="summary-row">
+      <span>
+       Items total
+      </span>
+      <strong id="cart-total">
+       ₱0.00
+      </strong>
+     </div>
+     <div class="summary-row summary-total">
+      <strong>
+       Grand Total
+      </strong>
+      <strong id="cart-grand-total">
+       ₱0.00
+      </strong>
+     </div>
+     <div class="summary-actions">
+      <a class="btn btn-primary btn-block" href="payment.html" id="proceed-payment">
+       Proceed to Payment →
+      </a>
+      <a class="btn btn-outline btn-block" href="menu.html">
+       ← Continue Shopping
+      </a>
+     </div>
+    </aside>
+   </div>
+  </main>
+  <footer class="footer">
+   Campus Cafeteria POS · IT 415 Practical Examination
+  </footer>
+ </body>
+</html>

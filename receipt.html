@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   Receipt | Campus Cafeteria
+  </title>
+  <link href="style.css" rel="stylesheet"/>
+  <script defer="" src="app.js">
+  </script>
+ </head>
+ <body>
+  <header class="site-header">
+   <nav class="nav container">
+    <a class="brand" href="index.html">🍃 Campus<span>Cafeteria</span></a>
+    <div class="nav-links">
+     <a href="index.html">
+      Home
+     </a>
+     <a href="menu.html">
+      Menu
+     </a>
+     <a class="cart-pill" href="cart.html">🛒 Cart (<span data-cart-count>0</span>)</a>
+    </div>
+   </nav>
+  </header>
+  <main class="container">
+   <div class="page-intro page-intro-centered">
+    <span class="eyebrow">
+     Transaction complete
+    </span>
+    <h1>
+     Your Receipt
+    </h1>
+   </div>
+   <section class="receipt-container">
+    <div id="receipt-content">
+    </div>
+    <div class="receipt-actions" id="receipt-actions">
+     <button class="btn btn-outline" id="print-receipt">
+      🖨 Print Receipt
+     </button>
+     <button class="btn btn-primary" id="new-transaction">
+      + New Transaction
+     </button>
+    </div>
+   </section>
+  </main>
+  <footer class="footer">
+   Campus Cafeteria POS · IT 415 Practical Examination
+  </footer>
+ </body>
+</html>

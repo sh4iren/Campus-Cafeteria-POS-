@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Campus Cafeteria POS</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <div>
+        <h1>Campus Cafeteria POS</h1>
+        <p>IT 415 | Midterm Practical Examination</p>
+      </div>
+      <span class="badge">Cafeteria Counter</span>
+    </div>
+  </header>
+
+  <main class="layout">
+    <section class="panel" aria-labelledby="products-heading">
+      <div class="section-heading">
+        <div>
+          <h2 id="products-heading">Our Menu</h2>
+          <p>Select meals, sides, and drinks.</p>
+        </div>
+        <span class="pill">6 items</span>
+      </div>
+      <div id="product-list" class="product-grid"></div>
+    </section>
+
+    <section class="panel checkout" aria-labelledby="cart-heading">
+      <div class="section-heading">
+        <div>
+          <h2 id="cart-heading">Current Order</h2>
+          <p>Adjust quantities before checkout.</p>
+        </div>
+        <span id="cart-count" class="pill">0 items</span>
+      </div>
+
+      <div id="cart-items" class="cart-items"></div>
+      <div class="total-row">
+        <span>Order Total</span>
+        <strong id="order-total">₱0.00</strong>
+      </div>
+
+      <div class="payment-section">
+        <h3>Cash Payment</h3>
+        <label for="cash-input">Amount received (₱)</label>
+        <input id="cash-input" type="number" min="0" step="0.01" inputmode="decimal" placeholder="Enter cash amount">
+        <p id="payment-message" class="message" role="status" aria-live="polite"></p>
+        <button id="pay-button" class="button button-primary" type="button">Confirm Payment</button>
+      </div>
+
+      <section id="receipt-section" class="receipt-section" hidden aria-labelledby="receipt-heading">
+        <h3 id="receipt-heading">Digital Receipt</h3>
+        <div id="receipt-content" class="receipt"></div>
+        <button id="new-transaction-button" class="button button-secondary" type="button">New Transaction</button>
+      </section>
+    </section>
+  </main>
+</body>
+</html>
